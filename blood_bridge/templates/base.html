@@ -7,5 +7,12 @@
 <body>
     <h1>Welcome to Blood Bridge</h1>
     <p>This is the base template.</p>
+
+	<h1>Donor List</h1>
+	<ul>
+    	{% for donor in donors %}
+      	  <li>{{ donor.name }} - {{ donor.blood_type }}</li>
+    	{% endfor %}
+	</ul>
 </body>
 </html>
